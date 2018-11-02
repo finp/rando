@@ -1,0 +1,9 @@
+= rando
+A random repo for researching simplest adoc publication:
+
+. Check repo *Settings* in GitHub, must be set to publish master branch in *GitHub Pages* section.
+. Run `build.sh` to create HTML
+. Navigate to `<org>.github.io/repo/<file>.html. For example, link:https://finp.github.io/rando/docs/assembly_installing-using-installer.html[].
+
+
+

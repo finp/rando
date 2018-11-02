@@ -1,0 +1,1 @@
+asciidoctor -a toc=left docs/assembly_installing-using-installer.adoc
