@@ -1,0 +1,17 @@
+<html>
+  <head>
+    <script src="./node_modules/asciidoctor.js/dist/browser/asciidoctor.js"></script>
+  </head>
+        
+  <body>
+    test 2
+       <div id="target"></div>
+    <script>
+      var asciidoctor = Asciidoctor();
+	  const content = "include::index.adoc[]"
+	  const html = asciidoctor.convert(content,{safe: 'safe'});      
+      document.getElementById('target').innerHTML = html;
+    </script>
+  </body>
+</html>
+
