@@ -7,8 +7,20 @@
 
        <div id="target"></div>
     <script>
+      
       var asciidoctor = Asciidoctor();
-	  const content = "include::assembly_installing-on-eap-deployable.adoc[leveloffset=+1]";
+      var content = "include::index.adoc[leveloffset=+1]";
+
+
+       const html0 = asciidoctor.convert(content,{safe: 'server', attributes: {PRODUCT: 'BMX'}});      
+       document.getElementById('target').innerHTML = html0;
+
+
+      var fname = (location.search.match(/e=(.*)/)[1]);
+     
+
+        var content = "include::"+ fname + "[leveloffset=+1]";
+       
 
 	  const html = asciidoctor.convert(content,{safe: 'server', attributes: {PRODUCT: 'BMX'}});      
       document.getElementById('target').innerHTML = html;
